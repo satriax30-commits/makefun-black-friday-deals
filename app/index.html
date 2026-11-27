@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deal Radar — Black Friday 2026 deals, checked</title>
+<meta name="description" content="43 Black Friday and Cyber Monday deals, each checked by hand on 27 November 2026, with the store, the sale price, the usual price, the discount and an honest call on whether it is really a deal.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <p class="brand"><a href="#/">Deal Radar</a></p>
+  <h1>Black Friday deals, checked by hand</h1>
+  <p class="lede">43 deals from 7 stores, each with its sale price, its usual price, its discount, the time it was checked and where the price was read. Nothing here is a guess: every price was read from the store or a deals source that names the store on 27 November 2026.</p>
+</header>
+<form class="toolbar" id="toolbar" aria-label="Search and filter deals">
+  <label class="field field-search">Search
+    <input type="search" id="search" placeholder="Try &ldquo;AirPods&rdquo; or &ldquo;vacuum&rdquo;" autocomplete="off">
+  </label>
+  <label class="field">Category
+    <select id="category">
+      <option value="all">All categories</option>
+    </select>
+  </label>
+  <label class="field">Store
+    <select id="store">
+      <option value="all">All stores</option>
+    </select>
+  </label>
+  <label class="field">At least
+    <select id="discount">
+      <option value="0">Any discount</option>
+      <option value="20">20% off</option>
+      <option value="30">30% off</option>
+      <option value="40">40% off</option>
+      <option value="50">50% off</option>
+    </select>
+  </label>
+  <label class="field">Deal signal
+    <select id="signal">
+      <option value="all">Any signal</option>
+      <option value="new-low">New low</option>
+      <option value="strong">Strong deal</option>
+      <option value="routine">Routine sale</option>
+      <option value="inflated">Inflated</option>
+    </select>
+  </label>
+  <label class="field">Sort by
+    <select id="sort"></select>
+  </label>
+</form>
+<main id="app" aria-live="polite"></main>
+<footer>
+  <p><strong>How this board works.</strong> Prices were checked on 27 November 2026 (UTC) at the store or in a deals source that names the store; each card says where. The discount is computed from the two prices shown. A <strong>new low</strong> is the lowest price seen for that product; a <strong>strong deal</strong> is a deep cut worth acting on; a <strong>routine sale</strong> is a real discount that is not the best price around. Prices move during Black Friday week, so re-check the store page before you pay.</p>
+  <p>Deal Radar is an independent roundup. Store names are used only to say where a deal is sold.</p>
+</footer>
+</body>
+</html>
